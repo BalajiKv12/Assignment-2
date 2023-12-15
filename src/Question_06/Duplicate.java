@@ -37,7 +37,7 @@ public class Duplicate {
 
         for(int i =0;i<size;i++)
         {
-            for(int j=0,k=0;j<size;j++)
+            for(int j=i+1,k=0;j<size;j++)
             {
                 if(str[i].equals(str[j]) && !str[i].equals(s[k]))
                 {
@@ -47,7 +47,7 @@ public class Duplicate {
             }
 
             //printing duplicate elements in string array
-            if(count>1)
+            if(count>0)
             {
                 System.out.println("Duplicate Elements : "+str[i]);
                 //assigning str[i] to temporary string array to avoid repeatation in printing
@@ -56,5 +56,6 @@ public class Duplicate {
             //setting count variable to zero at end of each iteration
             count=0;
         }
+
     }
 }
