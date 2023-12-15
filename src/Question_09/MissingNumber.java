@@ -40,7 +40,7 @@ public class MissingNumber {
 
         //printing missing numbers
 
-        for(int i=0;i<=size;i++)
+        for(int i=0;i<size;i++)
         {
             if(arr1[i]==0)
             {
